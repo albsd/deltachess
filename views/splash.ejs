@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+
+        <link rel="stylesheet" href="stylesheets/style_splash.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Delta chess</title>
+    </head>
+    <body>
+        <header>
+            <img id="deltalogo" src="images/deltalogo.png">
+            <img id="tudlogo" src="images/tudlogo.png">
+        </header>
+        <main>
+            <div class="row">
+                <div class="column_left">
+                    <img  id="flamesplash"src="images/flame_splash.png">
+                </div>
+
+                <div class="column_right">
+
+                    <div id = "statistics">
+                        <p class = "paras">
+                            Games drawn : <%= gamesDrawn %>
+                        </p>
+                        <p class = "paras">
+                            Total player count: <%= totalPlayerCount %>
+                        </p>
+                        <p class = "paras">
+                            Total match count: <%= totalMatchCount %>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div class="blink_me">
+                <p> </p>
+                <center> Click on the flame to find a match . . . </center>
+                <p></p>
+            </div>
+
+            <a id="gamedesc">
+                <center> This is a self-capturing variation of chess. It works like normal chess, with the addition of
+                    the ability to capture your own pieces. </center>
+            </a>
+        </footer>
+
+
+        <!-- js scripts -->
+        <script src="javascripts/splash.js"></script>
+    </body>
+
+</html>

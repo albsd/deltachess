@@ -1,0 +1,30 @@
+body {
+    background-color: #e2e2e2;
+    padding: 50px;
+    font: 14px "Cascadia Mono", Helvetica, Arial, sans-serif;
+  }
+  
+  body{
+    background-image: url("images/flame_splash.png");
+  }
+  div {
+      position: fixed;
+      top:40%;
+      left:43%;
+      width: 230px;
+      border-top: 1px solid gray;
+      border-bottom: 1px solid gray;
+      margin: 0 auto;
+      align-content: center;
+      height: 140px;
+      overflow: hidden;
+      padding: 1vh 1vw;
+    }
+  
+    p {
+        color: rgb(98, 98, 98);
+    }
+
+  #x_sprite{
+      padding-right: 5px;
+  }

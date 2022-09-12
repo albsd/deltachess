@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <link rel="stylesheet" href="stylesheets/style_splash.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta chess</title>
+</head>
+<body>
+
+        <header>
+            <img id="deltalogo" onclick="audio1.play();" src="images/deltalogo.png">  
+            <script type="text/javascript">
+                const audio1 = new Audio();
+                audio1.src = "music/mtr.mp3";
+            </script>
+            <img onclick="audio.play();" id="tudlogo" src="images/tudlogo.png">
+            <script type="text/javascript">
+                const audio = new Audio();
+                audio.src = "music/stop_breathing.mp3";
+            </script>
+        </header>
+        
+        <audio autoplay="" loop="" controls="" style="display:none" id="audio">
+            <source src="music/stop_breathing.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+          <script>
+          document.getElementById('audio').play();
+          </script>
+
+        <main>  
+           
+            <div class="row">
+                <div class="column_left">
+                    
+                    
+                        <img onclick="window.location.href='http://localhost:3000/play'" id="flamesplash" src="images/flame_splash.png">
+                    
+
+                        <!-- stats -->
+                </div>
+
+                <div class="column_right">
+                    <p id="stats"> stats </p>
+                
+                </div>
+            </div>
+           
+              
+            
+        </main>
+
+    <footer id="footer">
+        <div class="blink_me">
+            <p> </p><center> Click on the flame to find a match . . . </center> <p></p>
+        </div>
+        
+        <a id="gamedesc"> <center> This is a self-capturing variation of chess. It works like normal chess, with the addition of the ability to capture your own pieces. </center> </a>
+    </footer>
+
+
+
+</body></html>

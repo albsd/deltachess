@@ -1,0 +1,30 @@
+#options {
+    position: fixed;
+    top:40.5%;
+    left:78.75%;
+    width: 230px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin: 0 auto;
+    align-content: center;
+    height: 62px;
+    overflow: hidden;
+    padding: 1vh 1vw;
+  }
+
+#x_sprite{
+    padding-right: 5px;
+}
+
+img[id^='drawbtn']:hover{
+    opacity: 0.3;
+}
+
+img[id^='resignbtn']:hover{
+  opacity: 0.3;
+}
+
+img[id^='abortbtn']:hover{
+  opacity: 0.3;
+}
+

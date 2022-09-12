@@ -1,0 +1,152 @@
+body {
+    background-color: #e2e2e2;
+    font: 16px "Cascadia Mono", Helvetica, Arial, sans-serif;
+  }
+  
+  
+  a {
+    color: #00B7FF;
+  }
+  .blink_me {
+    padding-left: 100px;
+    font-size:20px;
+    animation: blinker 1.5s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+  .paras {
+    color: rgb(98, 98, 98);
+  }
+
+  #statistics {
+      position: fixed;
+      top:40%;
+      left:75%;
+      width: 240px;
+      border-top: 1px solid gray;
+      border-bottom: 1px solid gray;
+      margin: 0 auto;
+      align-content: center;
+      height: 115px;
+      overflow: hidden;
+      padding: 1vh 1vw;
+  }
+  
+  .piece {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+  }
+  
+  #board {
+    width: 640px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    position:fixed;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .cell:nth-child(odd) {
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+  }
+  
+  .cell:nth-child(even) {
+    width: 80px;
+    height: 80px;
+    background-color: beige;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+  }
+  
+  .column_right{
+    float: right;
+  }
+
+  /*main {
+    margin: 0px;
+    min-height: 90%;
+    width: 100%;
+  }*/
+  
+  .column_left{
+    float: left;
+  }
+  
+  .left {
+    width: 25%;
+  }
+  
+  .right {
+    width: 75%;
+  }
+  
+  #stats{
+    padding-top: 250px;
+  }
+  
+  #flamesplash{
+    position:fixed;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #deltalogo{
+    float:left;
+  }
+  
+  
+  #tudlogo{
+    float:right;
+  }
+  
+  
+  #page-container {
+    position: relative;
+    min-height: 87vh;
+  }
+  
+  
+  #footer {
+    position: absolute;
+    top:90%;
+    bottom: 0;
+    width: 95%;
+    /*height: 2.5rem;   */         /* Footer height */
+  }
+
+
+  @media (max-width: 1200px), (max-height: 800px) {
+    body::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      font-size: 20px;
+      color: red;
+      padding: 50px;
+      content: "Your browser window is too small to display this page properly. Please use a larger window.";
+      z-index: 100;
+    }
+    
+    }
+  
